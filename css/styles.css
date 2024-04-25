@@ -224,7 +224,7 @@ img {
     flex-direction: row;
     min-width: 169px;
     height: 56px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-sec .but:hover,
@@ -344,10 +344,10 @@ img {
 .team-list .sec-list {
     width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .sec-list .team-border {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     padding: 32px 0;
     border-radius: 0px 0px 4px 4px;
@@ -374,7 +374,11 @@ img {
     margin-top: 8px;
 }
 
-.sec-list:hover .logo-link,
+.sec-list:hover .logo-link {
+    background: #404BBF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .sec-list:focus .logo-link {
     background: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -388,11 +392,11 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link .social-icon {
     fill: #F4F4FD;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========This is section 4========== */
@@ -455,7 +459,7 @@ img {
     height: 100%;
     width: 100%;
     transform: translateY(100%);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-list .list:hover .icon-par,
@@ -550,7 +554,7 @@ img {
     align-items: center;
     width: 40px;
     height: 40px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-social .logo-link:hover,
