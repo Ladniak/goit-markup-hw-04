@@ -379,7 +379,7 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sec-list:focus .logo-link {
+.sec-list .logo-link:focus {
     background: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -392,7 +392,7 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link .social-icon {
