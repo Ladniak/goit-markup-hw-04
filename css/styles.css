@@ -91,6 +91,8 @@ img {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .page-header .flex-box{
@@ -132,12 +134,12 @@ img {
     line-height: 24px;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-page .link:hover,
 .nav-page .link:focus {
     color: #404BBF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #studio {
@@ -172,6 +174,7 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover,
@@ -184,7 +187,7 @@ img {
 
 .first-sec {
     padding: 188px 0;
-    max-width: 100vw;
+    max-width: 1440px;
     background: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office1.jpg);
     background-repeat: no-repeat;
@@ -193,6 +196,7 @@ img {
 }
 
 .first-sec .first-box{
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,6 +224,7 @@ img {
     flex-direction: row;
     min-width: 169px;
     height: 56px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-sec .but:hover,
@@ -277,14 +282,16 @@ img {
     flex-direction: column;
 }
 
-.des-list .features-icon {
+.des-list .list-li .icon-div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     width: 264px;
     height: 112px;
     background: #f4f4fd;
     margin-bottom: 8px;
-    padding: 24px 100px;
 }
 
 .des-list .par-title {
@@ -310,6 +317,7 @@ img {
     background: #F4F4FD;
     padding: 120px 0;
     max-width: 100%vw;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .third-sec .third-box {
@@ -366,7 +374,8 @@ img {
     margin-top: 8px;
 }
 
-.sec-list:hover .logo-link {
+.sec-list:hover .logo-link,
+.sec-list:focus .logo-link {
     background: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -379,6 +388,11 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+}
+
+.logo-link .social-icon {
+    fill: #F4F4FD;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========This is section 4========== */
@@ -412,6 +426,7 @@ img {
 
 .port-list .list {
     width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-list .list:hover,
@@ -426,29 +441,24 @@ img {
     overflow: hidden;
 }
 
-.port-list .overlay {
+.port-list .par {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #4D5AE5;
-    transform: translatey(100%);
-    transition: transform 250ms ease-in-out;
-}
-
-.port-list .overlay .par {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    margin: 40px 32px 164px 32px;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    transform: translatey(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px 32px;
 }
 
-.port-list .list:hover .overlay,
-.port-list .list:focus .overlay {
-    transform: translatey(0);
+.port-list .list:hover .par,
+.port-list .list:focus .par {
+    transform: translatey(0%);
 }
 
 .list .border {
@@ -477,6 +487,7 @@ img {
 
 .foot .foot-box {
     display: flex;
+    align-items: baseline
 }
 
 .nav-logo-footer {
@@ -495,7 +506,11 @@ img {
     color: #FFFFFF;
 }
 
-.foot .par {
+.foot-text {
+    margin-right: 120px;
+}
+
+.foot-text .par {
     color: #F4F4FD ;
     letter-spacing: 0.02em;
     max-width: 264px;
@@ -503,7 +518,6 @@ img {
 
 .foot-social {
     display: flex;
-    margin-left: 120px;
     flex-direction: column;
 }
 
@@ -513,13 +527,17 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .foot-social .foot-list {
     display: flex;
     gap: 16px;
-    margin-top: 16px;
     border-radius: 70%;
+}
+
+.foot-social .list-li .socila-icon {
+    fill: #F4F4FD;
 }
 
 .foot-social .logo-link {
@@ -530,9 +548,10 @@ img {
     align-items: center;
     width: 40px;
     height: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-social .logo-link:hover {
+.foot-social .logo-link:hover,
+.foot-social .logo-link:focus {
     background: #31D0AA;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
