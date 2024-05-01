@@ -375,20 +375,16 @@ img {
 }
 
 .sec-list:hover .logo-link {
-    background: #404BBF;
+    background-color: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sec-list .logo-link:focus {
-    background: #404BBF;
+    background-color: #404BBF;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-list .social-list {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-list .logo-link {
+.social-list .logo-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,6 +392,7 @@ img {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link .social-icon {
